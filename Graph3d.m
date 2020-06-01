@@ -1,0 +1,12 @@
+a = input("a = ");
+b = input("b = ");
+v_min = input("v_min = ");
+v_max = input("v_max = ");
+x = -2*pi:pi/6:2*pi;
+y = v_min:0.1:v_max;
+[X,Y] = meshgrid(x,y);
+x1 = a*Y.*cosh(X);
+y1 = b*Y.*sinh(X);
+z = Y.^2;
+figure;
+mesh(x1,y1,z);
