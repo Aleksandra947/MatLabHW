@@ -1,4 +1,3 @@
-f = @(x)cos(x)-exp(0.001+x.^2);
-otv1 = solve(f);
-disp(otv);
-otv2 = fzero(f,0);
+syms x
+rez_fzero=fzero('cos(x)-exp(0.001+x*x)',0)
+res_solve=solve(cos(x)-exp(0.001+x^2)==0)

@@ -1,3 +1,4 @@
+clear
 a = 0;
 b = 2*pi;
 f = @(x)sin(x.*(1-x));

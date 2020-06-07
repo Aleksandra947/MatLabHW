@@ -1,11 +1,11 @@
 clear
-a = -3;
-b = 3;
-f = @(x)sin(exp(x));
+a = 0;
+b = 4*pi;
+f = @(x)sin(x)-cos(x);
 i = 0;
 m = 100;
 x = linspace(a,b,m);
-while i < 6
+while i < 11
     plot(x,f(x),x,0*x,'--');
     grid on;
     z = ginput(1);
