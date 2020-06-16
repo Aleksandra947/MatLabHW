@@ -1,7 +1,7 @@
 sym t;
 t = sym('t');
-x = input('¬ведите первое уравнение относительно t: ');
-y = input('¬ведите второе уравнение относительно t: ');
+x = input('Input first equation from t: ');
+y = input('Input second equation from t: ');
 a=2;
 evolventa(x, y, t, a)
 function [] = evolventa(x, y, t, a)
