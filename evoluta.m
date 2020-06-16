@@ -1,4 +1,9 @@
-function [ksi, eta] = evoluta(x, y, t)
+sym t;
+t = sym('t');
+x = input('¬ведите первое уравнение относительно t: ');
+y = input('¬ведите второе уравнение относительно t: ');
+evoluta1(x, y, t);
+function [ksi, eta] = evoluta1(x, y, t)
 dx = diff(x, t);
 ddx = diff(dx, t);
 dy = diff(y, t);
@@ -21,6 +26,5 @@ ys = vpa(subs(y, ts));
 
 plot(xs, ys);
 end
- 
 
 

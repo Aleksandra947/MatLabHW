@@ -1,3 +1,9 @@
+sym t;
+t = sym('t');
+x = input('¬ведите первое уравнение относительно t: ');
+y = input('¬ведите второе уравнение относительно t: ');
+a=2;
+evolventa(x, y, t, a)
 function [] = evolventa(x, y, t, a)
 dx = diff(x, t);
 dy = diff(y, t);
