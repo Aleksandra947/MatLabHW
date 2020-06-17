@@ -14,8 +14,8 @@ J = int(f, t);
 J = J - subs(J, a);
 X = x - (dx .* J)/f;
 Y = y - (dy .* J)/f;
-X = simplify(X)
-Y = simplify(Y)
+disp(X);
+disp(Y);
 grafik(X, Y, -10, 10);
 end
 
